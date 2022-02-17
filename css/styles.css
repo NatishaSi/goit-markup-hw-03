@@ -15,7 +15,7 @@ body {
 }   
 
 header{
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .container {
@@ -28,9 +28,7 @@ header{
 img {
     display: block;
     max-width: 100%;
-    height: auto;
-    text-align: center;
-    }
+    height: auto; }
 a {
     color: var(--primary-text-color);
     text-decoration: none;
@@ -52,7 +50,6 @@ a {
 .logo:focus,
 .logo-footer:hover,
 .logo-footer:focus {
-    text-decoration: underline;
     text-decoration-color: var(--accent-color);
 }
 .logo-web {
@@ -86,9 +83,9 @@ a {
 .mail:focus,
 a.tel:hover,
 a.tel:focus {
-    color: var(--accent-color);
-    text-decoration: underline;
-    text-decoration-color: var(--accent-color);
+color: var(--accent-color);
+text-decoration-color: var(--accent-color);
+text-decoration: none;
 }
 .list .main.current {
     color: var(--accent-color);
@@ -126,7 +123,7 @@ margin-right: 50px;
     color: var(--additional-text-color);
     text-align: center;
     text-transform: uppercase;
-    padding: 200px 452px;
+    padding: 200px 0;
 }
 
 .hero-title {
@@ -135,10 +132,14 @@ margin-right: 50px;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    width: 696px;
+    max-width: 696px;
     }
 
 .hero-but {
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
     background-color: var(--accent-color);
     color: var(--additional-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -149,12 +150,8 @@ margin-right: 50px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    cursor:pointer;
-    padding: 10px 32px;
-    display: inline-block;
-    min-width: 200px;
-    text-align: center;
-}
+    cursor:pointer;}
+
 .hero-but:hover,
 .hero-but:focus {
     background-color: var(--flicker-color);
@@ -195,7 +192,7 @@ margin-right: 50px;
 }
 
 .list-item-benefits {
-    width: 370px;
+    width: 270px;
 }
 
 /*Activities*/
@@ -206,6 +203,14 @@ margin-right: 50px;
 .activities-list {
     display: flex;
 }
+.list-item-activities {
+    width: 370px;
+}
+
+.list-item-activities + .list-item-activities {
+margin-left: 30px;
+}
+
 .title-activities {
     color: var(--primary-text-color);
     font-weight: 700;
@@ -242,8 +247,7 @@ margin-right: 50px;
 }
 .crewman {
     margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -273,28 +277,28 @@ margin-right: 50px;
 /*Footer*/
 footer {
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 /*Logo footer*/
 .logo-footer {
+    display: block;
+    margin-bottom: 20px;
     font-family: Raleway, bold;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--additional-text-color);
-    margin-bottom: 20px;
-    display: block;
-    padding-top: 60px;
-}
-/*Contacts*/
+    color: var(--additional-text-color);}
+    /*Contacts*/
 .location {
+    display: block;
+    margin-bottom:9px;
     color: var(--additional-text-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-bottom:9px;
-    display: block;
-}
+    letter-spacing: 0.03em;}
+
 .contacts-footer {
     font-weight: 400;
     font-size: 14px;
@@ -306,18 +310,14 @@ footer {
 .contacts-footer:hover,
 .contacts-footer:focus {
     color: var(--accent-color);
-    text-decoration: underline;
-    text-decoration-color: var(--accent-color);
-}
+    text-decoration-color: var(--accent-color);}
 
 .contacts-footer.mail {
     margin-bottom: 9px;
     display: block;
 }
 .contacts-footer.tel {
-    padding-bottom: 60px;
-    display: block;
-}
+    display: block;}
 
 /*Portfolio-pedge-two*/
 .filter-but {
@@ -346,9 +346,7 @@ footer {
     border: 1px solid #eeeeee;
     box-sizing: border-box;
     background-color: var(--additional-text-color);
-    min-width: 370px;
-    }
-    
+    min-width: 370px; }
 
 .title-examples {
     font-weight: 700;
@@ -394,12 +392,10 @@ ul.list-examples {
     display: block;
     }
     .text-examples {
-        width: 370px;
-        padding: 20px 24px;
-        border: 1px solid #EEEEEE;
-        box-sizing: border-box;
-    }
+    padding: 20px 24px;}
+
     .potfolio-examples {
-        padding-top: 94px;
-        padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     }
+    
