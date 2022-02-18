@@ -312,7 +312,7 @@ footer {
     color: var(--accent-color);
     text-decoration-color: var(--accent-color);}
 
-.contacts-footer.mail {
+.contacts-footer.mail { 
     margin-bottom: 9px;
     display: block;
 }
@@ -343,7 +343,6 @@ footer {
     color: var(--additional-text-color);
 }
 .examples {
-    border: 1px solid #eeeeee;
     box-sizing: border-box;
     background-color: var(--additional-text-color);
     min-width: 370px; }
@@ -392,8 +391,10 @@ ul.list-examples {
     display: block;
     }
     .text-examples {
-    padding: 20px 24px;}
-
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0;}
+    
     .potfolio-examples {
     padding-top: 94px;
     padding-bottom: 94px;
